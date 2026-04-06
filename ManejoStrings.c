@@ -25,7 +25,13 @@ int main (void)
 
     printf("Ingrese una contrasena: \n");
 
-    scanf(" %[^\n]", IngresoContrasena);
+    fgets(IngresoContrasena, 15, stdin);
+    int largoCsn = strlen(IngresoContrasena);
+
+    if(largoCsn == 15)
+        IngresoContrasena[15] = '\0';
+    else
+        IngresoContrasena[largoCsn-1] = '\0';
 
     if(!strcmp(IngresoContrasena,contrasena))
         printf("Contrasena correcta \n");
