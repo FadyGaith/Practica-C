@@ -16,7 +16,7 @@ int main (void)
 
     char nombre[] = "Fady";
 
-    strcat(palabra, nombre);
+    strncat(palabra, nombre,sizeof(palabra)-strlen(palabra)-1);
 
     printf("Las palabras unidas son %s \n", palabra);
 
