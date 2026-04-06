@@ -28,8 +28,8 @@ int main (void)
     fgets(IngresoContrasena, 15, stdin);
     int largoCsn = strlen(IngresoContrasena);
 
-    if(largoCsn == 15)
-        IngresoContrasena[15] = '\0';
+    if(largoCsn == 14)
+        IngresoContrasena[14] = '\0';
     else
         IngresoContrasena[largoCsn-1] = '\0';
 
